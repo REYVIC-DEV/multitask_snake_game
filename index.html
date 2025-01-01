@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="css/food.css">
+    <link rel="stylesheet" href="css/snake.css">
+    <link rel="stylesheet" href="css/index.css">
+    <title>Multitask Snake Game</title>
+</head>
+<div id="lengthcon">
+    <p>Score:</p>
+    <p id="score">0</p>
+    <p>Length:</p>
+    <p id="length">0</p>
+    <p>Bite Damage:</p>
+    <p id="bite">0</p>
+    <p id="levelUpRemind">Press Space to Level Up!!!</p>
+</div>
+<body>
+    <div id="game_over_container">
+        <p>GAME OVER</p>
+    </div>
+    <div id="start_container">
+        <div id="highScoreCon">
+            High Score:
+            <div id="highScore">0</div> 
+        </div>
+        <p>control: w = up, s = down, a = left, d = right, space = level up</p>
+        <button id="start_btn" type="button">START</button>
+    </div>
+    <div id="snake_head"></div>
+    <div id="body_container">
+        <!-- <div class="snake_body"></div> -->
+    </div>
+    <div class="food"></div>
+    <div class="food"></div>
+    <div class="food"></div>
+    <div class="food"></div>
+    <div class="food"></div>
+    <div class="food"></div>
+</body>
+<script src="index.js"></script>
+</html>

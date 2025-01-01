@@ -1,0 +1,62 @@
+#snake_head{
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+
+    --size:50px;
+
+    height: var(--size);
+    width: var(--size);
+
+    /* background-color: rgba(185, 185, 185, 0.678); */
+    background-image: url(../img/snake.png);
+    background-size: contain;
+    z-index: 1002;
+    border-radius: 100%;
+
+    visibility: hidden;
+}
+.snake_body{
+    position: absolute;
+
+
+    top: -100%;
+    left: -100%;
+
+    height: 48px;
+    width: 48px;
+
+    background-color: black;
+    /* background-image: url(../img/scales.jpg);
+    background-size: contain; */
+
+    border-radius: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    visibility: hidden;
+}
+
+.vis{
+    visibility: visible;
+}
+
+@keyframes opa {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 0.5;
+    }
+}
+
+.invincible{
+    animation: opa .5s infinite;
+}
+
+#body_container{
+    z-index: 100;
+}

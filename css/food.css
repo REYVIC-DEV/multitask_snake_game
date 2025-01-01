@@ -1,0 +1,20 @@
+.food{
+    position: absolute;
+
+    --size:30px;
+    height: var(--size);
+    width: var(--size);
+
+    background-color: brown;
+
+    border-radius: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: white;
+    cursor: pointer;
+
+    visibility: hidden;
+}

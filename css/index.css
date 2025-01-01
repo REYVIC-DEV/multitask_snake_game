@@ -1,0 +1,100 @@
+html, body{
+    height: 100svh;
+}
+*{
+    margin: 0;
+}
+body{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: grey;
+    overflow: hidden;
+    height: 90%;
+
+    padding-top: 60px;
+}
+
+#start_container{
+    border: 1px solid black;
+    
+    --size:50%;
+    height: var(--size);
+    width: var(--size);
+    
+    display: flex;
+    
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#start_container p{
+    width: 50%;
+    text-align: center;
+}
+
+#lengthcon{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+
+    border-bottom: 1px solid black;
+
+
+    height: 60px;
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    padding-left: 1em;
+    font-size: 30px;
+    align-items: center;
+    margin: 0;
+    z-index: 100001;
+
+    background-color: grey;
+
+}
+#length, #score{
+    margin-right: 1em;
+}
+
+#game_over_container{
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    visibility: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    z-index: 1000;
+    /* background-color: transparent; */
+}
+
+@keyframes lvl {
+    0%{
+        background-color: black;
+        font-size: 25px;
+    }
+    100%{
+        /* background-color: white; */
+        color: black;
+    }
+}
+
+#levelUpRemind{
+    margin-left: 1em;
+    color: white;
+    animation: lvl .5s ease-in-out infinite;
+
+    visibility: hidden;
+}
+
+#highScoreCon{
+    display: flex;
+    flex-direction: row;
+}
